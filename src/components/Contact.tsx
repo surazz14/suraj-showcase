@@ -142,9 +142,9 @@ const Contact = () => {
             <div>
               <h3 className="text-2xl font-bold mb-4">Let's Connect</h3>
               <p className="text-muted-foreground mb-8">
-                I'm always interested in new opportunities and exciting projects. 
-                Whether you have a project in mind or just want to chat about technology, 
-                feel free to reach out.
+                Based in Kathmandu, Nepal with 500+ professional connections. I'm always interested in 
+                new opportunities and exciting projects in the outsourcing/offshoring industry. 
+                Whether you have a project in mind or want to discuss technology and leadership, feel free to reach out.
               </p>
             </div>
 
@@ -175,8 +175,9 @@ const Contact = () => {
                   <span className="font-semibold text-foreground">Available for Work</span>
                 </div>
                 <p className="text-muted-foreground">
-                  Currently open to new opportunities and exciting projects. 
-                  Let's build something amazing together!
+                  Currently open to new opportunities and exciting projects in full-stack development, 
+                  Generative AI integration, and team leadership roles. Based in Kathmandu, Nepal and 
+                  experienced in international outsourcing projects. Let's build something amazing together!
                 </p>
               </CardContent>
             </Card>

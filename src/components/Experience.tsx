@@ -7,30 +7,30 @@ const Experience = () => {
     {
       title: "Senior Software Engineer",
       company: "Monotype",
-      period: "2023 - Present",
+      period: "Current Position",
       location: "Kathmandu, Nepal",
-      description: "Leading full-stack development initiatives with focus on Generative AI integration and modern web technologies.",
+      description: "Leading full-stack development initiatives with focus on Generative AI integration and modern web technologies in the outsourcing/offshoring industry.",
       achievements: [
-        "Architected and implemented AI-powered features using GPT and LangChain",
+        "Architected and implemented AI-powered features using cutting-edge technologies",
         "Led cross-functional teams in delivering scalable React.js applications",
-        "Optimized application performance resulting in 40% faster load times",
-        "Mentored junior developers and established coding best practices"
+        "Demonstrated leadership in complex software engineering projects",
+        "Contributed to innovative solutions in the typography and font technology space"
       ],
-      technologies: ["React.js", "Node.js", "TypeScript", "Generative AI", "AWS"]
+      technologies: ["React.js", "Node.js", "TypeScript", "Generative AI", "HTML", "JavaScript"]
     },
     {
       title: "Full Stack Engineer",
-      company: "Previous Company",
-      period: "2021 - 2023",
+      company: "Previous Experience",
+      period: "Previous Roles",
       location: "Nepal",
-      description: "Developed and maintained web applications using modern JavaScript frameworks and backend technologies.",
+      description: "Gained extensive experience in outsourcing/offshoring industry, developing expertise in full-stack web development.",
       achievements: [
-        "Built responsive web applications serving 10k+ users",
-        "Implemented microservices architecture for better scalability",
-        "Collaborated with product teams to deliver user-centric solutions",
-        "Maintained 99.9% uptime for critical business applications"
+        "Built responsive web applications with modern JavaScript frameworks",
+        "Developed strong foundation in HTML, CSS, and JavaScript technologies",
+        "Gained valuable experience in client communication and project delivery",
+        "Contributed to multiple successful software projects"
       ],
-      technologies: ["JavaScript", "React.js", "Node.js", "MongoDB", "Docker"]
+      technologies: ["JavaScript", "React.js", "Node.js", "HTML", "CSS"]
     }
   ];
 

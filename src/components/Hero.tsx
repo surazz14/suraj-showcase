@@ -18,11 +18,12 @@ const Hero = () => {
                 </span>
               </h1>
               <p className="text-xl sm:text-2xl text-muted-foreground max-w-2xl">
-                Senior Software Engineer
+                Computer Engineer | Generative AI | React.js | Node.js | TypeScript
               </p>
               <p className="text-lg text-muted-foreground max-w-2xl">
-                Full Stack Engineer specializing in Generative AI, React.js, Node.js, and TypeScript. 
-                Building innovative solutions at Monotype with a passion for cutting-edge technology.
+                Experienced Full Stack Engineer with demonstrated history in the outsourcing/offshoring industry. 
+                Currently serving as Senior Software Engineer at Monotype, building innovative solutions with 
+                cutting-edge technologies and leadership expertise. Graduate of Kathmandu University.
               </p>
             </div>
 

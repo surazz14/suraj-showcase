@@ -13,8 +13,9 @@ const Footer = () => {
               Suraj Dhakal
             </h3>
             <p className="text-muted-foreground max-w-md">
-              Senior Software Engineer passionate about creating innovative solutions 
-              with cutting-edge technologies and AI integration.
+              Computer Engineer and Senior Software Engineer at Monotype, specializing in 
+              Generative AI, React.js, Node.js, and TypeScript. Experienced in leadership 
+              and full-stack development in the outsourcing industry.
             </p>
           </div>
 

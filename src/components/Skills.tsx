@@ -5,23 +5,23 @@ const Skills = () => {
   const skillCategories = [
     {
       title: "Frontend Development",
-      skills: ["React.js", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Next.js"]
+      skills: ["React.js", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Responsive Design"]
     },
     {
       title: "Backend Development", 
-      skills: ["Node.js", "Express.js", "REST APIs", "GraphQL", "Microservices"]
+      skills: ["Node.js", "Express.js", "REST APIs", "Server-side Development", "API Integration"]
     },
     {
-      title: "Generative AI",
-      skills: ["OpenAI GPT", "LangChain", "AI Integration", "Prompt Engineering", "Machine Learning"]
+      title: "Generative AI & Machine Learning",
+      skills: ["Generative AI", "AI Integration", "OpenAI", "Machine Learning", "Prompt Engineering"]
     },
     {
-      title: "Database & Cloud",
-      skills: ["MongoDB", "PostgreSQL", "AWS", "Docker", "Kubernetes", "Redis"]
+      title: "Core Technologies",
+      skills: ["JavaScript", "TypeScript", "HTML", "CSS", "JSON", "Git"]
     },
     {
-      title: "Tools & Methodologies",
-      skills: ["Git", "CI/CD", "Agile", "Scrum", "Testing", "DevOps"]
+      title: "Leadership & Soft Skills",
+      skills: ["Team Leadership", "Project Management", "Mentoring", "Client Communication", "Problem Solving"]
     }
   ];
 
@@ -35,7 +35,8 @@ const Skills = () => {
             </span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Expertise across the full technology stack with a focus on modern web development and AI integration
+            Comprehensive expertise in full-stack development with specialized focus on Generative AI, 
+            modern web technologies, and team leadership in the outsourcing industry
           </p>
         </div>
 
