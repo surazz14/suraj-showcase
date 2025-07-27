@@ -42,7 +42,11 @@ const Skills = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => (
-            <Card key={index} className="bg-gradient-card border-border hover:shadow-card transition-all duration-300 group">
+            <Card 
+              key={index} 
+              className="bg-gradient-card border-border hover:shadow-card transition-all duration-300 group animate-fade-in"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
               <CardHeader>
                 <CardTitle className="text-xl font-semibold group-hover:text-primary transition-colors duration-300">
                   {category.title}

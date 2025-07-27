@@ -50,7 +50,11 @@ const Experience = () => {
 
         <div className="space-y-8">
           {experiences.map((exp, index) => (
-            <Card key={index} className="bg-gradient-card border-border hover:shadow-card transition-all duration-300">
+            <Card 
+              key={index} 
+              className="bg-gradient-card border-border hover:shadow-card transition-all duration-300 animate-fade-in"
+              style={{ animationDelay: `${index * 0.2}s` }}
+            >
               <CardHeader>
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                   <div>

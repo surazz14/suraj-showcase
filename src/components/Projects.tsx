@@ -62,7 +62,11 @@ const Projects = () => {
 
         <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="bg-gradient-card border-border hover:shadow-card transition-all duration-300 group h-full flex flex-col">
+            <Card 
+              key={index} 
+              className="bg-gradient-card border-border hover:shadow-card transition-all duration-300 group h-full flex flex-col animate-fade-in hover:scale-105"
+              style={{ animationDelay: `${index * 0.15}s` }}
+            >
               <CardHeader>
                 <CardTitle className="text-xl font-bold group-hover:text-primary transition-colors duration-300">
                   {project.title}

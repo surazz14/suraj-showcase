@@ -4,12 +4,12 @@ import heroImage from "@/assets/hero-image.jpg";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen bg-gradient-hero flex items-center justify-center px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <section className="min-h-screen bg-gradient-hero flex items-center justify-center px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
-          <div className="text-center lg:text-left space-y-8">
-            <div className="space-y-4">
+          <div className="text-center lg:text-left space-y-8 animate-fade-in">
+            <div className="space-y-4 animate-slide-up">
               <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight">
                 <span className="text-foreground">Hi, I'm</span>
                 <br />
