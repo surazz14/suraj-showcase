@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone Repository') {
+        stage('Checkout Code') {
             steps {
-                checkout scm
+                git branch: 'main', url: 'https://github.com/surazz14/suraj-showcase.git'
             }
         }
 
@@ -14,26 +14,21 @@ pipeline {
             }
         }
 
-        stage('Build React App') {
+        stage('Build App') {
             steps {
-                sh 'npm run build'
+                sh 'NODE_OPTIONS="--max-old-space-size=1024" npm run build'
             }
         }
 
-        stage('Deploy') {
+        stage('Deploy to Nginx') {
             steps {
-                sh 'cp -r build/* /var/www/html/'
-                sh 'sudo systemctl reload nginx'
+                sh '''
+                    rm -rf /var/www/html/*
+                    cp -r dist/* /var/www/html/
+                    echo "Deployed at $(date)" > /var/www/html/deploy-check.txt
+                    sudo /bin/systemctl restart nginx
+                '''
             }
-        }
-    }
-
-    post {
-        success {
-            echo 'Deployed successfully! ✅'
-        }
-        failure {
-            echo 'Build failed ❌'
         }
     }
 }
