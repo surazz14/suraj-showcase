@@ -1,12 +1,8 @@
 pipeline {
     agent any
 
-    tools {
-        nodejs 'NodeJS 20'
-    }
-
     stages {
-        stage('Checkout') {
+        stage('Clone Repository') {
             steps {
                 checkout scm
             }
@@ -18,20 +14,26 @@ pipeline {
             }
         }
 
-        stage('Build') {
+        stage('Build React App') {
             steps {
-                sh 'NODE_OPTIONS="--max-old-space-size=1024" npm run build'
+                sh 'npm run build'
             }
         }
 
-        stage('Deploy to Nginx') {
+        stage('Deploy') {
             steps {
-                sh '''
-                    rm -rf /var/www/html/*
-                    cp -r dist/* /var/www/html/
-                    sudo /bin/systemctl restart nginx
-                '''
+                sh 'cp -r build/* /var/www/html/'
+                sh 'sudo systemctl reload nginx'
             }
+        }
+    }
+
+    post {
+        success {
+            echo 'Deployed successfully! ✅'
+        }
+        failure {
+            echo 'Build failed ❌'
         }
     }
 }
