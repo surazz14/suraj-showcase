@@ -14,7 +14,6 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <I18nProvider defaultLanguage="en">
       <ThemeProvider defaultTheme="dark">
-        Hello I am website
         <TooltipProvider>
           <Toaster />
           <Sonner />
