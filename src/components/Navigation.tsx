@@ -119,7 +119,7 @@ const Navigation = () => {
                   onClick={() => scrollToSection("#contact")}
                   className="w-full bg-gradient-primary hover:shadow-glow transition-all duration-300"
                 >
-                  {t('navigation.hireMe')}
+                  {t('navigation.hireMe')} Now
                 </Button>
               </div>
             </div>
