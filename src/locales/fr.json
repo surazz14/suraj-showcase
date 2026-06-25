@@ -1,0 +1,116 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "skills": "Compétences",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "contact": "Contact",
+    "hireMe": "Engagez-moi"
+  },
+  "hero": {
+    "greeting": "Salut, je suis",
+    "name": "Suraj Dhakal",
+    "title": "Ingénieur Logiciel Senior",
+    "subtitle": "Passionné par la création d'applications web évolutives et l'exploration des frontières de la technologie IA",
+    "description": "Avec plus de 5 ans d'expérience en développement full-stack, je me spécialise dans React, Node.js et les technologies web modernes. Actuellement en train d'approfondir l'IA Générative et les applications d'apprentissage automatique.",
+    "downloadCV": "Télécharger CV",
+    "viewProjects": "Voir les Projets",
+    "scrollDown": "Faites défiler vers le bas pour explorer"
+  },
+  "skills": {
+    "title": "Compétences et Expertise",
+    "subtitle": "Technologies avec lesquelles je travaille",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Base de Données",
+      "tools": "Outils et Autres",
+      "ai": "IA et Apprentissage Automatique"
+    }
+  },
+  "experience": {
+    "title": "Expérience Professionnelle",
+    "subtitle": "Construire des solutions innovantes et diriger des équipes de développement dans le paysage technologique en évolution",
+    "present": "Présent",
+    "years": "ans",
+    "achievements": "Réalisations Clés",
+    "technologies": "Technologies Utilisées"
+  },
+  "education": {
+    "title": "Éducation et Certifications",
+    "subtitle": "Formation académique et certifications professionnelles qui ont façonné mon expertise technique",
+    "academicTitle": "Formation Académique",
+    "certificationsTitle": "Certifications Professionnelles",
+    "achievements": "Réalisations Clés",
+    "subjects": "Matières Clés"
+  },
+  "projects": {
+    "title": "Projets en Vedette",
+    "subtitle": "Quelques-uns de mes travaux récents",
+    "viewProject": "Voir le Projet",
+    "sourceCode": "Code Source",
+    "liveDemo": "Démo en Direct",
+    "technologies": "Technologies"
+  },
+  "contact": {
+    "title": "Entrer en Contact",
+    "subtitle": "Travaillons ensemble",
+    "description": "Je suis toujours ouvert à discuter de nouvelles opportunités, de projets intéressants, ou simplement à discuter de technologie.",
+    "form": {
+      "name": "Votre Nom",
+      "email": "Votre Email",
+      "subject": "Sujet",
+      "message": "Votre Message",
+      "send": "Envoyer le Message",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé avec succès!",
+      "error": "Échec de l'envoi du message. Veuillez réessayer."
+    },
+    "info": {
+      "email": "Email",
+      "phone": "Téléphone",
+      "location": "Localisation",
+      "availability": "Disponible pour du travail freelance"
+    }
+  },
+  "chatbot": {
+    "title": "Assistant IA",
+    "greeting": "Salut! Je suis l'assistant IA de Suraj. N'hésitez pas à me poser des questions sur son expérience, ses compétences ou ses projets!",
+    "placeholder": "Tapez votre message...",
+    "send": "Envoyer",
+    "typing": "L'IA tape...",
+    "error": "Désolé, j'ai des difficultés à me connecter maintenant. Veuillez réessayer plus tard.",
+    "responses": {
+      "skills": "Suraj maîtrise React, Node.js, TypeScript, Python et diverses technologies IA/ML. Il a une vaste expérience en développement full-stack et explore actuellement les applications d'IA Générative.",
+      "experience": "Suraj a plus de 5 ans d'expérience professionnelle en tant qu'ingénieur logiciel, travaillant sur des applications web évolutives, le développement d'API et les frameworks frontend modernes.",
+      "projects": "Suraj a travaillé sur divers projets incluant des plateformes e-commerce, des applications alimentées par l'IA et des applications web modernes utilisant React et Node.js.",
+      "contact": "Vous pouvez contacter Suraj via le formulaire de contact sur ce site web, ou vous connecter avec lui sur LinkedIn et GitHub.",
+      "default": "Je serais ravi de vous aider à en savoir plus sur Suraj! Vous pouvez me poser des questions sur ses compétences, son expérience, ses projets, ou comment le contacter."
+    }
+  },
+  "footer": {
+    "description": "Ingénieur Logiciel Senior passionné par la création de solutions innovantes et l'exploration des technologies IA.",
+    "quickLinks": "Liens Rapides",
+    "social": "Suivez-moi",
+    "copyright": "© 2024 Suraj Dhakal. Tous droits réservés.",
+    "builtWith": "Construit avec React, TypeScript et Tailwind CSS"
+  },
+  "theme": {
+    "toggle": "Basculer le thème",
+    "light": "Clair",
+    "dark": "Sombre",
+    "system": "Système"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Quelque chose s'est mal passé",
+    "retry": "Réessayer",
+    "close": "Fermer",
+    "open": "Ouvrir",
+    "save": "Sauvegarder",
+    "cancel": "Annuler",
+    "confirm": "Confirmer",
+    "yes": "Oui",
+    "no": "Non"
+  }
+}

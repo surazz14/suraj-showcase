@@ -1,22 +1,21 @@
-# Welcome to your Lovable project
+# Suraj's Portfolio Showcase
 
-## Project info
+## Project Overview
 
-**URL**: https://lovable.dev/projects/714ac0eb-7a48-4387-8443-c44d3e09e910
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS. Features a beautiful dark/light theme system with smooth animations and a professional design.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- 🌓 Dark/Light theme toggle with system preference detection
+- 📱 Fully responsive design
+- ⚡ Fast performance with Vite
+- 🎨 Modern UI with Tailwind CSS and shadcn/ui components
+- 🚀 Smooth animations and transitions
+- 💼 Professional portfolio sections
 
-**Use Lovable**
+## Development
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/714ac0eb-7a48-4387-8443-c44d3e09e910) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+To work on this project locally:
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
@@ -60,14 +59,19 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+## Deployment
 
-Simply open [Lovable](https://lovable.dev/projects/714ac0eb-7a48-4387-8443-c44d3e09e910) and click on Share -> Publish.
+This project can be deployed to various platforms:
 
-## Can I connect a custom domain to my Lovable project?
+### Vercel (Recommended)
+1. Connect your GitHub repository to Vercel
+2. Vercel will automatically detect it's a Vite project
+3. Deploy with default settings
 
-Yes, you can!
+### Netlify
+1. Connect your GitHub repository to Netlify
+2. Set build command: `npm run build`
+3. Set publish directory: `dist`
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+### Other Platforms
+The project builds to static files in the `dist` directory, making it compatible with any static hosting service.

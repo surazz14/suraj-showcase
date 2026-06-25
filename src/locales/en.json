@@ -1,0 +1,118 @@
+{
+  "navigation": {
+    "home": "Home",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact",
+    "hireMe": "Hire Me"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Suraj Dhakal",
+    "title": "Senior Software Engineer",
+    "subtitle": "Passionate about building scalable web applications and exploring the frontiers of AI technology",
+    "description": "With 5+ years of experience in full-stack development, I specialize in React, Node.js, and modern web technologies. Currently diving deep into Generative AI and machine learning applications.",
+    "downloadCV": "Download CV",
+    "viewProjects": "View Projects",
+    "scrollDown": "Scroll down to explore"
+  },
+  "skills": {
+    "title": "Skills & Expertise",
+    "subtitle": "Technologies I work with",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Database",
+      "tools": "Tools & Others",
+      "ai": "AI & Machine Learning"
+    }
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "subtitle": "Building innovative solutions and leading development teams in the evolving tech landscape",
+    "present": "Present",
+    "years": "years",
+    "achievements": "Key Achievements",
+    "technologies": "Technologies Used",
+    "showAll": "Show All",
+    "showLess": "Show Less"
+  },
+  "education": {
+    "title": "Education & Certifications",
+    "subtitle": "Academic background and professional certifications that shaped my technical expertise",
+    "academicTitle": "Academic Education",
+    "certificationsTitle": "Professional Certifications",
+    "achievements": "Key Achievements",
+    "subjects": "Key Subjects"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Some of my recent work",
+    "viewProject": "View Project",
+    "sourceCode": "Source Code",
+    "liveDemo": "Live Demo",
+    "technologies": "Technologies"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's work together",
+    "description": "I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Your Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again."
+    },
+    "info": {
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location",
+      "availability": "Available for freelance work"
+    }
+  },
+  "chatbot": {
+    "title": "AI Assistant",
+    "greeting": "Hi! I'm Suraj's AI assistant. Feel free to ask me anything about his experience, skills, or projects!",
+    "placeholder": "Type your message...",
+    "send": "Send",
+    "typing": "AI is typing...",
+    "error": "Sorry, I'm having trouble connecting right now. Please try again later.",
+    "responses": {
+      "skills": "Suraj is proficient in React, Node.js, TypeScript, Python, and various AI/ML technologies. He has extensive experience in full-stack development and is currently exploring Generative AI applications.",
+      "experience": "Suraj has 5+ years of professional experience as a software engineer, working on scalable web applications, API development, and modern frontend frameworks.",
+      "projects": "Suraj has worked on various projects including e-commerce platforms, AI-powered applications, and modern web applications using React and Node.js.",
+      "contact": "You can reach Suraj through the contact form on this website, or connect with him on LinkedIn and GitHub.",
+      "default": "I'd be happy to help you learn more about Suraj! You can ask me about his skills, experience, projects, or how to get in touch with him."
+    }
+  },
+  "footer": {
+    "description": "Senior Software Engineer passionate about creating innovative solutions and exploring AI technologies.",
+    "quickLinks": "Quick Links",
+    "social": "Follow Me",
+    "copyright": "© 2024 Suraj Dhakal. All rights reserved.",
+    "builtWith": "Built with React, TypeScript & Tailwind CSS"
+  },
+  "theme": {
+    "toggle": "Toggle theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try Again",
+    "close": "Close",
+    "open": "Open",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No"
+  }
+}

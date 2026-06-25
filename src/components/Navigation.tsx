@@ -1,10 +1,14 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { SimpleThemeToggle } from "@/components/ui/theme-toggle";
+import { SimpleLanguageSelector } from "@/components/ui/language-selector";
+import { useI18n } from "@/contexts/I18nContext";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { t } = useI18n();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,11 +20,11 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "Skills", href: "#skills" },
-    { name: "Experience", href: "#experience" },
-    { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
+    { name: t('navigation.home'), href: "#home" },
+    { name: t('navigation.skills'), href: "#skills" },
+    { name: t('navigation.experience'), href: "#experience" },
+    { name: t('navigation.projects'), href: "#projects" },
+    { name: t('navigation.contact'), href: "#contact" },
   ];
 
   const scrollToSection = (href: string) => {
@@ -66,18 +70,22 @@ const Navigation = () => {
             </div>
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
+          {/* Language, Theme Toggle & CTA Button */}
+          <div className="hidden md:flex items-center space-x-3">
+            <SimpleLanguageSelector />
+            <SimpleThemeToggle />
             <Button
               onClick={() => scrollToSection("#contact")}
               className="bg-gradient-primary hover:shadow-glow transition-all duration-300"
             >
-              Hire Me
+              {t('navigation.hireMe')}
             </Button>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
+          {/* Mobile controls */}
+          <div className="md:hidden flex items-center space-x-2">
+            <SimpleLanguageSelector />
+            <SimpleThemeToggle />
             <Button
               variant="ghost"
               size="icon"
@@ -111,7 +119,7 @@ const Navigation = () => {
                   onClick={() => scrollToSection("#contact")}
                   className="w-full bg-gradient-primary hover:shadow-glow transition-all duration-300"
                 >
-                  Hire Me
+                  {t('navigation.hireMe')}
                 </Button>
               </div>
             </div>

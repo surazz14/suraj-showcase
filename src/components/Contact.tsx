@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -15,14 +16,27 @@ const Contact = () => {
   });
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for your message. I'll get back to you soon!",
-    });
-    setFormData({ name: "", email: "", subject: "", message: "" });
+    try {
+      await emailjs.send(
+        'service_eg8l1hp', // replace with your EmailJS service ID
+        'template_2qay1sr', // replace with your EmailJS template ID
+        formData,
+        'user_Or9MJn8Ya9S3ymcdBvEwc' // replace with your EmailJS user/public key
+      );
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for your message. I'll get back to you soon!",
+      });
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again later.",
+        variant: "destructive",
+      });
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -36,20 +50,20 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "suraj@example.com",
-      href: "mailto:suraj@example.com"
+      value: "surajdhakal427@gmail.com",
+      href: "surajdhakal427@gmail.com"
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "Kathmandu, Nepal",
+      value: "Perth Nepal",
       href: "#"
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+977 98XXXXXXXX",
-      href: "tel:+97798XXXXXXXX"
+      value: "+432-665604",
+      href: "tel:+432-665604"
     }
   ];
 
@@ -171,7 +185,7 @@ const Contact = () => {
             <Card className="bg-gradient-card border-border">
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                  <div className="w-3 h-3 bg-success rounded-full animate-pulse"></div>
                   <span className="font-semibold text-foreground">Available for Work</span>
                 </div>
                 <p className="text-muted-foreground">

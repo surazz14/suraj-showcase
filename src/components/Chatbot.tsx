@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { MessageCircle, X, Send, Bot, User } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { useI18n } from "@/contexts/I18nContext";
 
 interface Message {
   id: string;
@@ -14,11 +15,12 @@ interface Message {
 }
 
 const Chatbot = () => {
+  const { t } = useI18n();
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
     {
       id: "1",
-      content: "Hi! I'm Suraj's AI assistant. Feel free to ask me anything about his experience, skills, or projects!",
+      content: t('chatbot.greeting'),
       isUser: false,
       timestamp: new Date()
     }
@@ -68,8 +70,8 @@ const Chatbot = () => {
 
     } catch (error) {
       toast({
-        title: "Error",
-        description: "Failed to get response. Please try again.",
+        title: t('common.error'),
+        description: t('chatbot.error'),
         variant: "destructive"
       });
       setIsTyping(false);
@@ -78,15 +80,19 @@ const Chatbot = () => {
 
   // Simulate backend response - replace this with your actual API call
   const simulateBackendCall = async (message: string): Promise<string> => {
-    const responses = [
-      "Suraj is a Senior Software Engineer at Monotype with expertise in React.js, Node.js, TypeScript, and Generative AI. He's based in Kathmandu, Nepal.",
-      "He graduated from Kathmandu University and has extensive experience in the outsourcing/offshoring industry with 500+ professional connections.",
-      "His technical skills include Frontend Development (React.js, TypeScript, JavaScript), Backend Development (Node.js, Express.js), and specialization in Generative AI integration.",
-      "Suraj has demonstrated leadership experience and has worked on various innovative projects combining modern web technologies with AI integration.",
-      "You can connect with him through LinkedIn or email. He's currently open to new opportunities and exciting projects in full-stack development and AI integration."
-    ];
+    const lowerMessage = message.toLowerCase();
     
-    return responses[Math.floor(Math.random() * responses.length)];
+    if (lowerMessage.includes('skill') || lowerMessage.includes('tech')) {
+      return t('chatbot.responses.skills');
+    } else if (lowerMessage.includes('experience') || lowerMessage.includes('work')) {
+      return t('chatbot.responses.experience');
+    } else if (lowerMessage.includes('project')) {
+      return t('chatbot.responses.projects');
+    } else if (lowerMessage.includes('contact') || lowerMessage.includes('reach')) {
+      return t('chatbot.responses.contact');
+    } else {
+      return t('chatbot.responses.default');
+    }
   };
 
   return (
@@ -96,7 +102,7 @@ const Chatbot = () => {
         <Button
           onClick={() => setIsOpen(!isOpen)}
           size="lg"
-          className="rounded-full w-14 h-14 bg-gradient-primary hover:shadow-glow transition-all duration-300 animate-bounce-gentle"
+          className="rounded-full w-14 h-14 hover:shadow-glow transition-all duration-300 animate-bounce-gentle"
         >
           {isOpen ? <X className="w-6 h-6" /> : <MessageCircle className="w-6 h-6" />}
         </Button>
@@ -109,7 +115,7 @@ const Chatbot = () => {
             <CardHeader className="pb-3">
               <CardTitle className="flex items-center gap-2 text-lg">
                 <Bot className="w-5 h-5 text-primary" />
-                Chat with Suraj's AI
+                {t('chatbot.title')}
               </CardTitle>
             </CardHeader>
             
@@ -175,7 +181,7 @@ const Chatbot = () => {
                 <Input
                   value={inputValue}
                   onChange={(e) => setInputValue(e.target.value)}
-                  placeholder="Ask me anything about Suraj..."
+                  placeholder={t('chatbot.placeholder')}
                   className="flex-1 bg-background border-border"
                   disabled={isTyping}
                 />
@@ -191,12 +197,12 @@ const Chatbot = () => {
 
               {/* Quick Questions */}
               <div className="space-y-2">
-                <p className="text-xs text-muted-foreground">Quick questions:</p>
+                <p className="text-xs text-muted-foreground">{t('common.loading')}:</p>
                 <div className="flex flex-wrap gap-1">
                   {[
-                    "What's Suraj's experience?",
-                    "Tell me about his skills",
-                    "How to contact him?"
+                    t('chatbot.responses.experience').substring(0, 25) + '?',
+                    t('chatbot.responses.skills').substring(0, 20) + '?',
+                    t('chatbot.responses.contact').substring(0, 20) + '?'
                   ].map((question, index) => (
                     <Button
                       key={index}
